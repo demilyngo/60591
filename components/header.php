@@ -18,9 +18,10 @@
             <li><a href="catalog.php">Каталог</a></li>
             <?php
             $res = $conn->query("SELECT * FROM users WHERE login='".$_POST['login']."'");
-            $admin = $res->fetch();
+
             if ($_SESSION['username']) {
-                if($admin['is_admin'] == 1)
+                $admin = $res->fetch();
+                if($_SESSION['admin'])
                     echo('<li><a href="product_add.php">Добавить продукт</a></li>');
                 echo ('<li><a href="login.php?logout=1">'.$_SESSION['username'].' (Выйти) </a></li>');
                 echo ('<li><a href="order.php">Заказ</a></li>');

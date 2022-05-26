@@ -10,7 +10,7 @@
     <h2 class="visually-hidden">Популярные товары</h2>
     <ul class="products-list">
       <li>
-        <a class="product-card" href="product.php?product_id=1">
+        <a class="product-card" href="product.php?product_id=6">
           <h3>Мсеюлида</h3>
           <p>лампа напольная</p>
           <span class="price"><del>289</del> 288</span>
@@ -18,7 +18,7 @@
         </a>
       </li>
       <li>
-        <a class="product-card product-card-new" href="product.php?product_id=2">
+        <a class="product-card product-card-new" href="product.php?product_id=7">
           <h3>Рмаериби</h3>
           <p>диван трёхместный</p>
           <span class="price">5870</span>
@@ -26,7 +26,7 @@
         </a>
       </li>
       <li>
-        <a class="product-card" href="product.php?product_id=3">
+        <a class="product-card" href="product.php?product_id=4">
           <h3>Блетуб</h3>
           <p>люстра потолочная</p>
           <span class="price">1360</span>

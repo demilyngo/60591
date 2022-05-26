@@ -4,7 +4,7 @@
 
         <?php while ($item = $result->fetch()) {?>
             <li>
-                <a class="order-card"  href="product.php?product_id=<?= $item['id'] ?>">
+                <a class="order-card"  href="product.php?product_id=<?= $item['id_product'] ?>">
                     <table>
                         <tr>
                             <td><img src="<?= $item['img_url'] ?>" width="156" height="120" alt="<?= $item['title'] ?>"></td>

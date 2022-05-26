@@ -4,7 +4,7 @@ require('auth.php');
 require('components/header.php');
 if ($_SESSION['username']) {
     //Получение текущего заказа
-    $result = $conn->query("SELECT *  FROM orders WHERE id_user=" . $_SESSION['id_auth_user']);
+    $result = $conn->query("SELECT *  FROM orders WHERE status=0 and id_user=" . $_SESSION['id_auth_user']);
     //Если заказа не найдено
     if (!$row = $result->fetch()) {
         //Если был запрос на добавление товара в заказ то создание нового заказа
